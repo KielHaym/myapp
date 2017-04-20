@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :products
   resources :users
   # sets home page for the application
   root 'pages#home'
