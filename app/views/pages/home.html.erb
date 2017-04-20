@@ -7,35 +7,8 @@
 
 	<body>
 	
-		<h1>Listing Users</h1>
-		<% if notice %>
-		<p id="notice"> <%=
+		<h1>Shopping Cart Project</h1>
 
-		<table>
-			<thead>
-				<tr>
-				<th>Name</th>
-				<th></th>
-				<th></th>
-				<th></th>
-				<th></th>
-				</tr>
-			</thead>
-
-			<tbody>
-				<% @users.each do |user| %>
-				<tr>
-					<td><%= user.name %></td>
-					<td><%= link_to 'show', user %></td>
-					<td><%= link_to 'Edit', edit_ser_path(user) %></td>
-					<td><%= link_to 'Destroy', user, method: Ldelete, data: {confirm: 'Are you sure?' %></td>
-				</tr>
-				<% end %>
-			</tbody>
-		</table>
-		<br>
-
-		<%= link_to 'New User', new_user_path %>
 
 	</body>
 
